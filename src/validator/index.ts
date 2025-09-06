@@ -22,7 +22,7 @@ export const validateBody=(schema:ZodObject)=>{
 export const validateQuery=(schema:ZodObject)=>{
     return async(req:Request,res:Response,next:NextFunction)=>{
         try{
-            await schema.parseAsync(req.);
+            await schema.parseAsync(req.query);
             console.log('Request query is valid');
             next();
         }
