@@ -1,0 +1,34 @@
+{
+  "name": "expresstemplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/server.ts",
+    "dev": "nodemon --watch src --ext ts --exec \"node --loader ts-node/esm src/server.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Assis-Mohanty/ExpressTemplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Assis-Mohanty/ExpressTemplate/issues"
+  },
+  "homepage": "https://github.com/Assis-Mohanty/ExpressTemplate#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "zod": "^4.1.5"
+  }
+}
