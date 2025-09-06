@@ -11,7 +11,7 @@ class User extends Model<InferAttributes<User>,InferCreationAttributes<User>>{
     declare updatedAt:CreationOptional<Date>;
 }
 
-Model.init({
+User.init({
     id:{
         type:"INTEGER",
         autoIncrement:true,
@@ -30,6 +30,10 @@ Model.init({
         allowNull:false,
         defaultValue:false
     },
+    passwordHash:{
+        type:"STRING",
+        allowNull:false
+    },
     createdAt:{
         type:"DATE",
         allowNull:false,
@@ -45,3 +49,5 @@ Model.init({
     underscored:true,
     paranoid:true,
 })
+
+export default User;
